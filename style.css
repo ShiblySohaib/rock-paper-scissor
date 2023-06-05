@@ -1,0 +1,81 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(94, 110, 98);
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.welcome{
+    text-align: center;
+    background-color: rgb(241, 93, 7);
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    width: 50%;
+    border-radius: 10px;
+    border: 4px solid;
+    box-shadow: 5px 10px ;
+}
+.rules{
+    display: flex;
+    background-color: grey;
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 10px;
+    box-shadow: 2px 4px rgb(75, 74, 74);
+    margin-top: 30px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    font-weight: 800;
+    color: #ebdddd;
+    justify-content: center;
+}
+#announce{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#gameplay{
+    /* border: 2px solid black; */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+#playermove{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+#pcmove{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.playbox{
+    width: 200px;
+    height: 250px;
+    /* border: 2px solid black; */
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+#choices{
+    /* border: 2px solid; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.choice{
+    border: 2px solid;
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 10px;
+    box-shadow:2px 4px rgb(75, 74, 74);
+}
+

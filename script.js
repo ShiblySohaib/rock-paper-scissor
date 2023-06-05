@@ -21,6 +21,7 @@ function playRound(p = playerChoice(), c = getComputerChoice()) {
   }
 }
 
+
 function game() {
   let user = 0,
     pc = 0;
