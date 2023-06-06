@@ -1,2 +1,2 @@
 # rock-paper-scissor
-[Live page] (https://top-shibly.github.io/rock-paper-scissor/)
+[Live page]([I'm an inline-style link](https://www.google.com)
