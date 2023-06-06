@@ -40,17 +40,18 @@ computerMove.innerHTML = defaultMove;
 
 rpschoices.forEach((choice) => {
     choice.addEventListener("click", function getPlayerChoice(e) {
-        console.log(e.target.parentElement.id);
-        playerMove.innerHTML = "";
-        setTimeout(
-            (update = () => (playerMove.innerHTML = choice.innerHTML)),
-            50
-        );
-        if (e.target.parentElement.id == "rock") playerChoice = 0;
-        else if (e.target.parentElement.id == "paper") playerChoice = 1;
-        else if (e.target.parentElement.id == "scissor") playerChoice = 2;
-        getComputerChoice();
-        playRound();
+        if (playerScore < gamePoint && computerScore < gamePoint) {
+            playerMove.innerHTML = "";
+            setTimeout(
+                (update = () => (playerMove.innerHTML = choice.innerHTML)),
+                50
+            );
+            if (e.target.parentElement.id == "rock") playerChoice = 0;
+            else if (e.target.parentElement.id == "paper") playerChoice = 1;
+            else if (e.target.parentElement.id == "scissor") playerChoice = 2;
+            getComputerChoice();
+            playRound();
+        }
     });
 });
 
@@ -85,7 +86,9 @@ function playRound() {
         playerScore++;
         pScore.innerHTML = `${playerScore}`;
     }
-    if (playerScore == gamePoint || computerScore == gamePoint) endgame();
+    if (playerScore == gamePoint || computerScore == gamePoint) {
+        setTimeout(endgame, 500);
+    }
 }
 
 const endscreen = document.querySelector("#ends");
@@ -95,8 +98,7 @@ endscreen.style.display = "none";
 restart.onclick = () => initialize();
 
 function endgame() {
-    if(playerScore == gamePoint)
-        result.textContent = "You won the game!";
+    if (playerScore == gamePoint) result.textContent = "You won the game!";
     else result.textContent = "You lost the game!";
     gamescreen.style.display = "none";
     endscreen.style.display = "block";
