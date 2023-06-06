@@ -44,7 +44,7 @@ body{
     display: flex;
     justify-content: center;
 }
-#playermove{
+#playermove,#pcmove{
     width: 200px;
     height: 200px;
     border: 2px solid black;
@@ -52,15 +52,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-}
-#pcmove{
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+    transition: 0.5s ease;
 }
 .playbox{
     width: 200px;
@@ -131,5 +123,8 @@ body{
 .choice:active,.restart:active{
     box-shadow: 0 0;
     translate: 0 4px;
+}
+.moveDelay{
+    transition: opacity 1s ease-in-out;
 }
 
