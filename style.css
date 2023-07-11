@@ -1,6 +1,6 @@
 body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(94, 110, 98);
+    background-color: rgb(99, 99, 99);
 }
 .top{
     width: 100%;
@@ -9,7 +9,7 @@ body{
 }
 .welcome{
     text-align: center;
-    background-color: rgb(241, 93, 7);
+    background-color: rgb(150, 149, 148);
     padding: 50px;
     font-size: 20px;
     font-weight: 600;
