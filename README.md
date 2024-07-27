@@ -1,2 +1,2 @@
 # rock-paper-scissor
-[Live page](https://top-shibly.github.io/rock-paper-scissor/)
+[Live page](https://shiblysohaib.github.io/rock-paper-scissor/)
